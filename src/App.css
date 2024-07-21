@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #A6CFF5;
+    margin: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .container {
+    width: 250px;
+    background-color: #223552;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .container input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    background-color: #2E3E56;
+    color: white;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 5px;
   }
-}
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:nth-child(1),
+  .buttons button:nth-child(2),
+  .buttons button:nth-child(3),
+  .buttons button:nth-child(4) {
+    background-color: #308393;
+    color: white;
+  }
+  
+  .buttons button:nth-child(17) {
+    grid-column: span 2;
+    background-color: #F39729;
+    color: white;
+  }
+  
+  .buttons button:nth-child(5),
+  .buttons button:nth-child(6),
+  .buttons button:nth-child(7),
+  .buttons button:nth-child(8),
+  .buttons button:nth-child(9),
+  .buttons button:nth-child(10),
+  .buttons button:nth-child(11),
+  .buttons button:nth-child(12),
+  .buttons button:nth-child(13),
+  .buttons button:nth-child(14),
+  .buttons button:nth-child(15),
+  .buttons button:nth-child(16),
+  .buttons button:nth-child(18) {
+    background-color: #2E3E56;
+    color: white;
+  }
+  
+  .buttons button:focus {
+    outline: none;
+  }
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.8); 
+  }
+  
